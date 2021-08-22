@@ -13,23 +13,23 @@
 # and you'll see the result has been added to the data stack
 # -> (data [6.0] / func [])
 
-# now type, `4 5` and you'll see they've been added to the stack as well
-# -> (data [6.0, 4.0, 5.0] / func [])
+# infix math is a bit boring, though. do you like rpn?
+# try typing in `1 2 3 + +` instead - it'll also work
+# you can also try `+ + 1 2 3`
+# or `+ 1 2 3 +` if you're feeling brave
+# if you've typed all of those in, you'll see a stack with 4 sixes
+# -> (data [6.0, 6.0, 6.0, 6.0] / func [])
 
+# you're probably wondering what the hell just happened
+# dw, i'll explain, but first let's clear the stack
 # type `.` to clear BOTH of your stacks
 # -> (data [] / func [])
 
-
-
-
-# ok im running out of time, tutorial speeds up. now!
-
-# typing a function puts it on the func stack
+# so, typing a function puts it on the func stack
 # `+ +`
 # -> (data [] / func [+, +])
 
-# when there the top of the data stack is enough for the top of the function stack
-# the function gets called. and the function is popped off the stack
+# when there's enough values on the of the data stack the function gets called, and popped off the stack
 # `1 2 3`
 # -> (data [6.0] / func [])
 
